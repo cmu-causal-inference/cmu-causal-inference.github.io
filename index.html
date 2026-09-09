@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#c41230" />
+    <title>Causal Inference Working Group | Carnegie Mellon University</title>
+    <meta name="description" content="The Causal Inference Working Group at Carnegie Mellon Statistics & Data Science. Meeting schedule, organizers, people, and causal inference resources." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="CMU Causal Inference Working Group home">
+          <span class="brand-cmu">CMU</span>
+          <span class="brand-department">Statistics &amp;<br />Data Science</span>
+        </a>
+        <nav class="navigation" id="navigation" aria-label="Main navigation">
+          <a href="#meetings">Meetings</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#people">People</a>
+          <a href="#resources">Resources</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="home" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="short-rule" aria-hidden="true"></span> Carnegie Mellon University</p>
+          <h1 id="hero-heading">Causal Inference<br /><em>Working Group</em></h1>
+          <p class="hero-description">We meet weekly to discuss causal inference papers and research in progress at Carnegie Mellon Statistics &amp; Data Science.</p>
+        </div>
+
+        <figure class="causal-figure">
+          <svg class="causal-graph" viewBox="0 0 440 330" role="img" aria-labelledby="graph-title graph-desc">
+            <title id="graph-title">A simple causal diagram</title>
+            <desc id="graph-desc">Confounders X influence both treatment A and outcome Y. The red arrow from treatment to outcome represents the causal relationship of interest.</desc>
+            <defs>
+              <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#d5d8dd" /></pattern>
+              <marker id="arrow-gray" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="m1 1 7 4-7 4" fill="none" stroke="#747b84" stroke-width="1.3" /></marker>
+              <marker id="arrow-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="m1 1 7 4-7 4" fill="none" stroke="#c41230" stroke-width="1.4" /></marker>
+            </defs>
+            <rect width="440" height="330" fill="url(#dots)" />
+            <path d="M195 106 126 205" stroke="#747b84" stroke-width="1.6" fill="none" marker-end="url(#arrow-gray)" />
+            <path d="M245 106 314 205" stroke="#747b84" stroke-width="1.6" fill="none" marker-end="url(#arrow-gray)" />
+            <path d="M147 237H289" stroke="#c41230" stroke-width="2.2" fill="none" marker-end="url(#arrow-red)" />
+            <circle cx="220" cy="76" r="36" fill="#fff" stroke="#a5abb3" stroke-width="1.5" />
+            <circle cx="107" cy="237" r="38" fill="#c41230" />
+            <circle cx="333" cy="237" r="38" fill="#fff" stroke="#252b34" stroke-width="1.5" />
+            <g class="graph-letters" font-family="Georgia, serif" font-style="italic" font-size="33" text-anchor="middle">
+              <text x="220" y="87" fill="#252b34">X</text>
+              <text x="107" y="248" fill="#fff">A</text>
+              <text x="333" y="248" fill="#252b34">Y</text>
+            </g>
+            <g class="graph-labels" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#626a75">
+              <text x="220" y="25">Confounders</text>
+              <text x="107" y="306">Treatment</text>
+              <text x="333" y="306">Outcome</text>
+            </g>
+          </svg>
+          <figcaption><span>Average treatment effect</span><span class="figure-formula" aria-label="Expected value of Y of one minus Y of zero">E[Y(1) − Y(0)]</span></figcaption>
+        </figure>
+      </section>
+
+      <div class="container content">
+        <section class="section meetings-section" id="meetings" aria-labelledby="meetings-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="meetings-heading">Meetings</h2></div>
+          <div class="section-body">
+            <p class="meeting-logistics">Tuesday, 4-5pm @ BH 232M</p>
+            <div class="schedule" role="region" aria-label="Meeting schedule" tabindex="0">
+              <table>
+                <caption class="sr-only">Working group meeting schedule</caption>
+                <thead><tr><th scope="col">Date</th><th scope="col">Discussant</th><th scope="col">Paper / Topic</th></tr></thead>
+                <tbody>
+                  <tr><td>09/08</td><td>Patrick Kramer</td><td>Introductory meeting</td></tr>
+                  <tr><td>09/15</td><td>JungHo Lee</td><td>Nonparametric identification and estimation of causal effects in examiner-IV designs</td></tr>
+                  <tr><td>09/22</td><td></td><td></td></tr>
+                  <tr><td>09/29</td><td><a href="https://kraneguo.github.io/" target="_blank" rel="noopener noreferrer">Wenxuan Guo<span class="sr-only"> (opens in a new tab)</span></a></td><td><a href="https://arxiv.org/abs/2606.28200" target="_blank" rel="noopener noreferrer">Experimental design when N equals one<span class="sr-only"> (opens in a new tab)</span></a></td></tr>
+                  <tr><td>10/06</td><td></td><td></td></tr>
+                  <tr class="schedule-break"><td>10/13</td><td>—</td><td>Fall break</td></tr>
+                  <tr><td>10/20</td><td></td><td></td></tr>
+                  <tr><td>10/27</td><td>Austin Feng</td><td>Evaluating the impact of violence prevention policies on rare gun violence outcomes</td></tr>
+                  <tr><td>11/03</td><td></td><td></td></tr>
+                  <tr><td>11/10</td><td>Erik</td><td>Incremental Effects with Spatial Process Treatments</td></tr>
+                  <tr><td>11/17</td><td>Neha Gupta</td><td>Ongoing work, title TBD</td></tr>
+                  <tr class="schedule-break"><td>11/24</td><td>—</td><td>Thanksgiving</td></tr>
+                  <tr><td>12/01</td><td>Kai Cooper (UPenn)</td><td>Monitoring Racial Bias in Traffic Enforcement with Noisy Proxies of Driver Behavior</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="section organizers-section" id="organizers" aria-labelledby="organizers-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="organizers-heading">Organizers</h2></div>
+          <div class="section-body">
+            <ul class="organizer-list">
+              <li><a class="inline-link" href="https://jungholeestat.github.io/" target="_blank" rel="noopener noreferrer">JungHo Lee<span class="sr-only"> (opens in a new tab)</span></a></li>
+              <li><a class="inline-link" href="https://www.cmu.edu/dietrich/statistics-datascience/research/members/patrick-kramer.html" target="_blank" rel="noopener noreferrer">Patrick Kramer<span class="sr-only"> (opens in a new tab)</span></a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section people-section" id="people" aria-labelledby="people-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="people-heading">People</h2></div>
+          <div class="section-body">
+            <a class="resource" href="https://www.cmu.edu/dietrich/statistics-datascience/research/causal-inference.html" target="_blank" rel="noopener noreferrer"><div class="resource-copy"><h3>Causal inference at CMU</h3><p>Faculty and students working on causal inference in Statistics &amp; Data Science.</p></div><span class="resource-type">People</span><span class="resource-arrow" aria-hidden="true">↗</span><span class="sr-only">Opens in a new tab</span></a>
+          </div>
+        </section>
+
+        <section class="section resources-section" id="resources" aria-labelledby="resources-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="resources-heading">Resources</h2></div>
+          <div class="section-body">
+            <div class="resource-list">
+              <a class="resource" href="https://www.ehkennedy.com/731732.html" target="_blank" rel="noopener noreferrer"><div class="resource-copy"><h3>Causal Inference — Edward Kennedy</h3></div><span class="resource-type">Courses &amp; notes</span><span class="resource-arrow" aria-hidden="true">↗</span><span class="sr-only">Opens in a new tab</span></a>
+              <a class="resource" href="https://sites.google.com/view/ocis/home" target="_blank" rel="noopener noreferrer"><div class="resource-copy"><h3>Online Causal Inference Seminar</h3></div><span class="resource-type">Seminars</span><span class="resource-arrow" aria-hidden="true">↗</span><span class="sr-only">Opens in a new tab</span></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      <div class="footer-inner"><p><a href="https://www.cmu.edu/dietrich/statistics-datascience/" target="_blank" rel="noopener noreferrer">Statistics &amp; Data Science<span class="sr-only"> (opens in a new tab)</span></a><span class="footer-divider" aria-hidden="true"> / </span><span>Carnegie Mellon University</span></p><a href="#home">Back to top ↑</a></div>
+    </footer>
+  </body>
+</html>
