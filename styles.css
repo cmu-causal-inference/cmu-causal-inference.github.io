@@ -69,13 +69,13 @@ tbody tr:last-child td { border-bottom: 0; }
 .organizers-section { padding-block: 30px; }
 .organizer-list { display: flex; flex-wrap: wrap; gap: 12px 32px; list-style: none; padding: 0; margin: 0; }
 .resource-list { margin-top: -4px; }
-.resource { display: grid; grid-template-columns: minmax(0,1fr) auto 18px; align-items: center; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.resource { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .resource:first-child { padding-top: 0; }
 .resource:last-child { border-bottom: 0; padding-bottom: 0; }
 .resource-copy h3 { font-size: 1rem; line-height: 1.5; letter-spacing: -.012em; }
 .resource-copy p { color: var(--muted); font-size: .875rem; margin-top: 4px; }
 .resource-type { font-size: .75rem; color: var(--muted); }
-.resource-arrow { color: var(--red); font-size: 1.2rem; }
+.resource-arrow { display: none; }
 .site-footer { padding-top: 12px; }
 .footer-inner { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; border-top: 1px solid var(--line); padding-block: 25px 31px; font-size: .75rem; color: var(--muted); }
 .footer-inner p { display: flex; flex-wrap: wrap; align-items: baseline; gap: 9px; }
@@ -97,7 +97,7 @@ tbody tr:last-child td { border-bottom: 0; }
   .section-heading { gap: 11px; }
   h2 { font-size: 1.25rem; }
   .resource-type { display: none; }
-  .resource { grid-template-columns: minmax(0,1fr) 18px; }
+  .resource { grid-template-columns: minmax(0,1fr); }
 }
 @media (max-width: 700px) {
   html { scroll-padding-top: 132px; }
@@ -122,7 +122,7 @@ tbody tr:last-child td { border-bottom: 0; }
   .organizers-section { padding-block: 25px; }
   .resource-list { margin-top: 0; }
   .resource-type { display: block; }
-  .resource { grid-template-columns: minmax(0,1fr) auto 18px; }
+  .resource { grid-template-columns: minmax(0,1fr) auto; }
   .footer-inner { align-items: flex-start; padding-block: 21px; }
   .footer-inner p { display: block; }
   .footer-inner p > span:last-child { display: block; margin-top: 5px; }
@@ -140,7 +140,7 @@ tbody tr:last-child td { border-bottom: 0; }
   th { padding: 11px 12px; }
   td { padding-inline: 12px; }
   .resource-type { display: none; }
-  .resource { grid-template-columns: minmax(0,1fr) 18px; }
+  .resource { grid-template-columns: minmax(0,1fr); }
   .footer-inner { flex-wrap: wrap; gap: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
