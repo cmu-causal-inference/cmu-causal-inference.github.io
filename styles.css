@@ -39,8 +39,8 @@ svg { display: block; }
 .hero { display: grid; grid-template-columns: minmax(0,1fr) 330px; align-items: center; gap: 64px; padding-top: 51px; padding-bottom: 53px; }
 .eyebrow { display: flex; align-items: center; gap: 12px; text-transform: uppercase; font-size: .75rem; letter-spacing: .115em; line-height: 1.6; color: #525964; }
 .short-rule { height: 2px; width: 25px; flex-shrink: 0; background: var(--red); }
-h1 { margin-top: 19px; font-size: clamp(2.8rem,4.8vw,3.75rem); letter-spacing: -.052em; line-height: 1.12; }
-h1 em { color: var(--red); font-family: var(--serif); font-weight: 400; letter-spacing: -.045em; }
+h1 { margin-top: 19px; font-family: var(--serif); font-size: clamp(2rem,4.8vw,3.375rem); font-weight: 400; letter-spacing: -.04em; line-height: 1.12; }
+.hero-group-name { display: block; margin-top: 13px; color: var(--red); font-family: var(--font); font-size: 1.6875rem; font-weight: 400; line-height: 1.3; letter-spacing: -.015em; }
 .hero-description { margin-top: 22px; max-width: 610px; font-size: 1.0625rem; line-height: 1.75; color: #4e5560; }
 .causal-figure { background: var(--wash); border: 1px solid var(--line); border-radius: 3px; padding: 18px 17px 15px; }
 .causal-graph { width: 100%; height: auto; }
@@ -84,7 +84,6 @@ tbody tr:last-child td { border-bottom: 0; }
 @media (max-width: 1100px) {
   .container { padding-inline: 40px; }
   .hero { grid-template-columns: minmax(0,1fr) 300px; gap: 42px; }
-  h1 { font-size: clamp(2.7rem,4.8vw,3.5rem); }
   .section { grid-template-columns: 174px minmax(0,1fr); gap: 27px; }
   .graph-labels { font-size: 23px; }
 }
@@ -109,7 +108,7 @@ tbody tr:last-child td { border-bottom: 0; }
   .navigation { width: 100%; gap: 20px; margin-top: 8px; }
   .navigation a { padding-block: 10px; }
   .hero { grid-template-columns: 1fr; gap: 27px; padding-top: 35px; padding-bottom: 34px; }
-  h1 { font-size: clamp(2.7rem,8.5vw,3.65rem); margin-top: 17px; }
+  h1 { font-size: clamp(2rem,7vw,3.375rem); margin-top: 17px; }
   .hero-description { font-size: 1.0625rem; margin-top: 19px; max-width: 550px; }
   .causal-figure { width: 100%; max-width: 330px; justify-self: center; padding: 15px 17px; }
   .graph-labels { font-size: 23px; }
@@ -131,7 +130,6 @@ tbody tr:last-child td { border-bottom: 0; }
 @media (max-width: 420px) {
   .container { padding-inline: 20px; }
   .navigation { justify-content: space-between; gap: 10px; }
-  h1 { font-size: clamp(2.35rem,10.5vw,2.9rem); }
   .eyebrow { font-size: .75rem; gap: 10px; letter-spacing: .07em; }
   .short-rule { width: 20px; }
   .causal-figure { max-width: 310px; }
